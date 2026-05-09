@@ -2,6 +2,9 @@
 
 {
 
+  # Firefox
+  programs.firefox.enable = true;
+
   # Terminal
   programs.fish.enable = true;
 

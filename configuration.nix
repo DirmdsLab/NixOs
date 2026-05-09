@@ -30,6 +30,9 @@
       # VM
       ./modules/virt-manager/vm.nix
 
+      # Fonts
+      ./modules/fonts/fonts.nix
+
     ];
 
   # Host
@@ -51,7 +54,7 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Version
-  system.stateVersion = "25.05"; 
+  system.stateVersion = "25.11"; 
 
 }
 
