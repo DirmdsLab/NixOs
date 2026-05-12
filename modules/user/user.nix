@@ -29,6 +29,9 @@
       mpv
       ffmpeg-full
 
+      # Image
+      loupe
+
       # Tool mpvpaper
       socat
       jq
@@ -50,11 +53,23 @@
       # Translate
       translate-shell
 
+      # Sosmed
+      discord
+
+      # Tool
+      moonlight-qt
+      obs-studio
+
     ];
     
     # Default user terminal
     shell = pkgs.fish;
 
   };
+
+  # Unfree
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+    "discord"
+  ];
 
 }
