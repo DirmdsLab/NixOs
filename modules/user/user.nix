@@ -59,6 +59,7 @@
       # Tool
       moonlight-qt
       obs-studio
+      krita
 
     ];
     
