@@ -9,7 +9,10 @@
   programs.fish.enable = true;
 
   # Hyprland
-  programs.hyprland.enable = true;
+  programs.hyprland = {
+    enable = true;
+    withUWSM = true;
+  };
 
   # Files
   programs.xfconf.enable = true;
