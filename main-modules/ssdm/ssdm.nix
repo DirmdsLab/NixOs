@@ -6,7 +6,7 @@ let
   customTheme = pkgs.sddm-astronaut.override {
     embeddedTheme = "hyprland_kath";
     themeConfig = {
-      Background = "/etc/nixos/modules/ssdm/hyprland_kath.mp4";
+      Background = "/etc/nixos/main-modules/ssdm/hyprland_kath.mp4";
     };
   };
 
