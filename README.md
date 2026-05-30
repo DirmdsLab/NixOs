@@ -4,8 +4,9 @@
 
 ```bash
 .
-├── modules/
+├── main-modules/
 │   ├── apps/                # General Apps
+│   ├── fonts/               # fonts
 │   ├── nix-options/         # Options
 │   ├── sound/               # Audio configuration
 │   ├── ssdm/                # Ssdm
@@ -13,10 +14,11 @@
 │   ├── user/                # User 
 │   └── virt-manager/        # Virtualization setup
 │
-├── modules-flake/
-│   └── apps/                # Module flake
+├── flake-modules/
+│   ├── lanzaboote/          # secure boot
+│   └── quickshell/          # quickshell
 │
-├── configuration.nix        # Main Config
+├── main.nix                 # Main Config
 ├── flake.nix                # Flake definition
 ├── flake.lock               # Lock dependency
 └── hardware-configuration.nix  # Auto-generated (ignore)
@@ -82,8 +84,10 @@ ISO: [latest-nixos-minimal-x86_64-linux.iso](https://nixos.org/download/)
     - configuration-live.nix
     - flake.nix
 
-    Move the file:
-    - temp/configuration-live.nix → /etc/nixos/configuration.nix
+    install minimal
+    - git
+    - set user
+    - network
 
     ## Install & Reboot
 
@@ -91,9 +95,14 @@ ISO: [latest-nixos-minimal-x86_64-linux.iso](https://nixos.org/download/)
     - Reboot into your new NixOS system with encryption enabled.  
 
     ## After Install
-    After reboot, run `setup-update-nix.sh` and choose option 2 (update).
+    After reboot clone repo and run `setup.sh`.
 
-    Option 1 is for setting up Secure Boot and enrolling keys.
+    Before rebuild setup Key Secure Boot
+    ```bash
+    nix-shell -p sbctl
+    sudo sbctl create-keys
+    ```
+    - If you have preexisting keys move to /var/lib/sbctl
 
     For more information about Secure Boot:
     - [Lanzaboote (Secure Boot for NixOS)](https://github.com/nix-community/lanzaboote)

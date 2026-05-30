@@ -107,8 +107,8 @@ clean_and_update() {
         fi
     fi
 
-    run sudo cp -r modules $TARGET_DIR/
-    run sudo cp -r modules-flake $TARGET_DIR/
+    run sudo cp -r main-modules $TARGET_DIR/
+    run sudo cp -r flake-modules $TARGET_DIR/
 
     run echo "Next Step"
     run echo "sudo nixos-rebuild switch --flake /etc/nixos#Tutturuu"

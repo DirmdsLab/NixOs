@@ -9,29 +9,29 @@
       ./hardware-configuration.nix
 
       # systemd-boot
-      ./modules/systemd-boot/systemd-boot.nix
+      ./main-modules/systemd-boot/systemd-boot.nix
 
       # Sound
-      ./modules/sound/sound.nix
+      ./main-modules/sound/sound.nix
 
       # User
-      ./modules/user/user.nix
+      ./main-modules/user/user.nix
 
       # nix-options
-      ./modules/nix-options/nix-options.nix
-      ./modules/nix-options/lock.nix
+      ./main-modules/nix-options/nix-options.nix
+      ./main-modules/nix-options/lock.nix
      
       # System Apps
-      ./modules/apps/general-apps.nix
+      ./main-modules/apps/general-apps.nix
 
       # Login
-      ./modules/ssdm/ssdm.nix
+      ./main-modules/ssdm/ssdm.nix
 
       # VM
-      ./modules/virt-manager/vm.nix
+      ./main-modules/virt-manager/vm.nix
 
       # Fonts
-      ./modules/fonts/fonts.nix
+      ./main-modules/fonts/fonts.nix
 
     ];
 

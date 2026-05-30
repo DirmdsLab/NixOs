@@ -32,8 +32,8 @@
 
       modules = [
         ./main.nix
-        ./modules-flake/apps/lanzaboote.nix
-        ./modules-flake/apps/quickshell.nix
+        ./flake-modules/lanzaboote/lanzaboote.nix
+        ./flake-modules/quickshell/quickshell.nix
       ];
       
     };
