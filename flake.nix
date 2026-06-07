@@ -13,27 +13,20 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Quickshell
-    quickshell = {
-      url = "github:quickshell-mirror/quickshell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
   };
 
-  outputs = { self, nixpkgs, lanzaboote, quickshell, ... }: {
+  outputs = { self, nixpkgs, lanzaboote, ... }: {
 
     nixosConfigurations.Tutturuu = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
 
       specialArgs = {
-        inherit lanzaboote quickshell;
+        inherit lanzaboote;
       };
 
       modules = [
         ./main.nix
         ./flake-modules/lanzaboote/lanzaboote.nix
-        ./flake-modules/quickshell/quickshell.nix
       ];
       
     };

@@ -33,6 +33,9 @@
       hyprlock
       wofi
       hypridle
+
+      # quickshell
+      quickshell
   
       # Better Tools
       eza
