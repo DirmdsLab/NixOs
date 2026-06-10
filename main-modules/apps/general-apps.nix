@@ -52,10 +52,6 @@
       mako
       libnotify    
   
-      # App-Image
-      appimage-run
-      icu
-  
     ];
 
 }
