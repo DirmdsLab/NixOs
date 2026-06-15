@@ -60,6 +60,9 @@
       moonlight-qt
       obs-studio
 
+      # chromium
+      chromium
+
     ];
     
     # Default user terminal
