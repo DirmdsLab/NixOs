@@ -15,19 +15,4 @@
     };
   };
 
-  virtualisation.spiceUSBRedirection.enable = true;
-
-  # --- IOMMU ---
-  boot.kernelParams = [
-    "amd_iommu=on"
-    "iommu=pt"
-    "vfio-pci.ids=1002:6fdf,1002:aaf0"
-  ];
-
-  boot.kernelModules = [
-    "vfio_pci"
-    "vfio_iommu_type1"
-    "vfio"
-    "vendor_reset"
-  ];
 }
