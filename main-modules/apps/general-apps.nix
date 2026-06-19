@@ -15,6 +15,8 @@
       efibootmgr
       zip
       unzip
+      nvtopPackages.amd
+      mangohud
 
       # Disk
       gparted
