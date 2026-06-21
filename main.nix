@@ -47,12 +47,6 @@
   # Zram
   zramSwap.enable = true;
 
-  # swap
-  swapDevices = [{
-    device = "/swapfile";
-    size = 8*1024;
-  }];
-
   # Unfree
   nixpkgs.config.allowUnfree = true;
 
