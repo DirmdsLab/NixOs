@@ -8,6 +8,7 @@
   # Ram
   boot.kernelParams = [
     "memmap=1M$0x1C9E00000"
+    "memmap=1M$0x1CBE00000"
   ];
 
   # Use the systemd-boot EFI boot loader.
