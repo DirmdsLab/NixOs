@@ -34,9 +34,6 @@
   # Podman
   virtualisation.podman.enable = true;
 
-  # Flatpak
-  services.flatpak.enable = true;
-
   # Bluetooth
   hardware.bluetooth.enable = true;
 
