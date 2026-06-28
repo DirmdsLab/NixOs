@@ -8,6 +8,12 @@
   # Terminal
   programs.fish.enable = true;
 
+  # polkit
+  security.polkit = {
+    enable = true;
+    enablePkexecWrapper = true;
+  };
+
   # Hyprland
   programs.hyprland = {
     enable = true;
