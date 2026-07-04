@@ -63,6 +63,14 @@
       # chromium
       chromium
 
+      # Draw
+      krita
+
+      # Game
+      appimage-run
+      icu76
+      
+
     ];
     
     # Default user terminal

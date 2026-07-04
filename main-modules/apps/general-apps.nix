@@ -38,6 +38,7 @@
 
       # quickshell
       quickshell
+      qt6.qtmultimedia
   
       # Better Tools
       eza
