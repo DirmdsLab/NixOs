@@ -27,6 +27,10 @@
   # Tablet
   hardware.opentabletdriver.enable = true;
 
+  # Steam 
+  programs.steam.enable = true;
+  programs.gamemode.enable = true;
+
   # Miror
   services.sunshine = {
     enable = true;
