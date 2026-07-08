@@ -66,8 +66,7 @@
       # Draw
       krita
 
-      # Game
-      appimage-run
+      # Osu
       icu76
       
 

@@ -29,7 +29,11 @@
 
   # Steam 
   programs.steam.enable = true;
+  
+  # Game
   programs.gamemode.enable = true;
+  programs.appimage.enable = true;
+
 
   # Miror
   services.sunshine = {
