@@ -39,6 +39,7 @@
       # UwU
       cava
       tty-clock
+      peaclock
 
       # Dev
       vscodium
@@ -68,7 +69,9 @@
 
       # Osu
       icu76
-      
+
+      # pass
+      age      
 
     ];
     
