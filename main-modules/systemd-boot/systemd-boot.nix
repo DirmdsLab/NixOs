@@ -5,10 +5,9 @@
   # Kernel
   boot.kernelPackages = pkgs.linuxPackages_latest;
   
-  # Ram
+  # RAM blacklist
   boot.kernelParams = [
-    "memmap=1M$0x1C9E00000"
-    "memmap=1M$0x1CBE00000"
+    "memmap=35M$0x1C9D00000"
   ];
 
   # Use the systemd-boot EFI boot loader.
