@@ -53,6 +53,11 @@
   # Features
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  # Nix path
+  nix.nixPath = [
+    "nixpkgs=flake:nixpkgs"
+  ];
+
   # Unfree
   nixpkgs.config.allowUnfree = true;
 

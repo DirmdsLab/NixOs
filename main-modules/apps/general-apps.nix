@@ -14,6 +14,7 @@
       tmux
       efibootmgr
       mangohud
+      btrfs-assistant
 
       # Archive
       p7zip

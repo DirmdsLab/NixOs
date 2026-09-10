@@ -64,6 +64,9 @@
       # Discord
       discord      
 
+      # Game
+      steam
+
     ];
     
     # Default user terminal
