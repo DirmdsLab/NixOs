@@ -15,4 +15,8 @@
     };
   };
 
+  environment.systemPackages = with pkgs; [ 
+    dnsmasq 
+  ];
+
 }

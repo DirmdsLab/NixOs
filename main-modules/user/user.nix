@@ -62,7 +62,10 @@
       age
 
       # Discord
-      discord      
+      discord
+
+      # Chromium
+      chromium      
 
     ];
     
