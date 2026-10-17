@@ -7,6 +7,7 @@
       # Tools
       wget
       git
+      file
       fastfetch
       ydotool
       usbutils  
