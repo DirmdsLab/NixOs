@@ -17,7 +17,6 @@
   # Hyprland
   programs.hyprland = {
     enable = true;
-    withUWSM = true;
   };
 
   # File Manager

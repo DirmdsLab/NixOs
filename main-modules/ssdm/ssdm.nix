@@ -12,10 +12,14 @@ let
 
 in {
 
+  services.xserver.enable = true;
+
+  services.displayManager.defaultSession = "hyprland";
+
   # Login
   services.displayManager.sddm = {
     enable = true;
-    wayland.enable = true;
+    wayland.enable = false;
     package = pkgs.kdePackages.sddm;
     extraPackages = [ customTheme ];
     theme = "sddm-astronaut-theme";
